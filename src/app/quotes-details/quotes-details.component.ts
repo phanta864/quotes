@@ -13,6 +13,7 @@ quotDelete(complete:boolean){
    this.isComplete.emit(complete);
  }
   constructor() { }
+
   quoteDelete(complete:boolean){
    this.isComplete.emit(complete);
  }
