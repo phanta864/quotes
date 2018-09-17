@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+     <div class="col-sm-12 col-md-6">
+        <app-quotes-form (addQuote)="showpost($event)"></app-quotes-form>
+     </div>
+     <div class="col-sm-12 col-md-6">
+     <div *ngFor="let quotes of quote;let i=index" class="moja">
+        <!-- <app-quotes-details [quotes]="quotes"></app-quotes-details> -->
+        <app-quotes-details [quotes]='quotes' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
+      </div>
+
+     </div>
+    </div>
+</div>
+<!-- </div> -->

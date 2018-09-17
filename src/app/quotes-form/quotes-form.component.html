@@ -1,0 +1,21 @@
+<h1>Quotes</h1>
+<div class="container-fluid">
+  <div class="row">
+  <form (ngSubmit)='submitQuote()'>
+  <div class="form-group">
+ <label for="quote">Quote</label>
+<input type="text" required class="form-control" id="event" [(ngModel)]="newQuotes.quote" #quote="ngModel" name="quote">
+ </div>
+ <div class="form-group">
+   <label for="author">Author</label>
+   <input type="text" required class="form-control" id="venue" [(ngModel)]="newQuotes.author" #author="ngModel" name="author">
+ </div>
+ <div class="form-group">
+   <label for="publisher">Publisher</label>
+   <input type="text" required class="form-control" id="date" [(ngModel)]="newQuotes.publisher" #publisher="ngModel" name="publisher">
+ </div>
+ <button type="submit" class="btn btn-success btn-lg">Add Quote</button>
+</form>
+<!-- <i class="fas fa-thumbs-up"></i> -->
+</div>
+</div>
