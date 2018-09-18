@@ -12,19 +12,21 @@
   {{quotes.author}}
 </p>
 <div>
-  <p>Likes {{quotes.likes}}</p>
-  <p>Dislikes {{quotes.dislikes}}</p>
-</div>
 <div class="container">
   <div class="row">
 <div class="col-md-6">
   <button type="button" class="btn btn-default" (click)="addLikes()">
     Dislike <span class="fas fa-thumbs-down"></span>
   </button>
+  {{quotes.dislikes}}
 </div>
 <div class="col-md-6">
     <button type="button" class="btn btn-default" (click)="addDislikes()">
       Like <span class="fas fa-thumbs-up"></span>
     </button>
+    {{quotes.likes}}
 </div>
+</div>
+</div>
+<br>
 <button (click)= 'quoteDelete(true)'> Delete Quote </button>
