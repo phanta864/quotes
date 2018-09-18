@@ -1,6 +1,6 @@
 export class Quotes {
   public show:boolean
-  constructor(public id:number,public quote:string, public author:string, public publisher:string){
+  constructor(public id:number,public quote:string, public author:string, public publisher:string,public likes:number,public dislikes:number){
 
   }
 }

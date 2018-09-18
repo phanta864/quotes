@@ -18,6 +18,14 @@ quotDelete(complete:boolean){
    this.isComplete.emit(complete);
  }
 
+addDislikes(){
+   this.quotes.likes+=1;
+}
+
+addLikes(){
+ this.quotes.dislikes+=1;
+}
+
   ngOnInit() {
   }
 
